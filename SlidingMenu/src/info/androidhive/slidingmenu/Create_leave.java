@@ -48,6 +48,7 @@ public class Create_leave extends Fragment
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) 
 	{
+		
 		View rootView = inflater.inflate(R.layout.create_leave, container, false);
 		text1 = (EditText) rootView.findViewById(R.id.editText1);
 		text2= (EditText) rootView.findViewById(R.id.editText2 );
@@ -64,6 +65,7 @@ public class Create_leave extends Fragment
     }
 	protected void sendEmail() 
 	{	
+		
 	      System.out.println("Send email");
 	      String[] TO = {"coolsunila1@gmail.com"};
 	      String[] CC = {"sunilagwl5@gmail.com"};
@@ -100,6 +102,7 @@ public class Create_leave extends Fragment
 	   }
 	void leave()
 	{
+		
 		String result = null;
 		InputStream is = null;
 		try
