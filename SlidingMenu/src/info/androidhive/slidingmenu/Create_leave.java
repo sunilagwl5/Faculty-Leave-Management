@@ -46,6 +46,15 @@ public class Create_leave extends Fragment
 	String Reason,type,user;
     public Create_leave(){}
 	@Override
+    /**
+     * Creates and returns the view associated with the fragment.
+     *
+     * @param inflater The LayoutInflater object that can be used to inflate any views in the fragment
+     * @param container If non-null, this is the parent view that the fragment's UI should be attached to
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state as given here
+     * @return The created view
+     * @throws InflateException If there is an error inflating a layout resource
+     */
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) 
 	{
 		
@@ -63,6 +72,17 @@ public class Create_leave extends Fragment
 		 });
 		 return rootView;
     }
+	   /**
+	    * Sends an email with the specified content.
+	    *
+	    * @throws ActivityNotFoundException if there is no email client installed
+	    *
+	    * Example:
+	    *
+	    * <pre>{@code
+	    * sendEmail();
+	    * }</pre>
+ 	   */
 	protected void sendEmail() 
 	{	
 		
@@ -100,6 +120,18 @@ public class Create_leave extends Fragment
 	         System.out.println("There is no email client installed.");
 	      }
 	   }
+	/**
+	 * Sends a leave request to the server and processes the response.
+	 *
+	 * @throws IOException if an error occurs during the HTTP connection
+	 * @throws JSONException if an error occurs while parsing the JSON response
+	 *
+	 * Example:
+	 *
+	 * <pre>{@code
+	 * leave();
+	 * }</pre>
+ 	*/
 	void leave()
 	{
 		
